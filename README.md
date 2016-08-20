@@ -1,4 +1,10 @@
-Get an API key from Youtube to search the api, and add it to the key var within search-actions.js.
+## Getting started.
+
+1. Clone this repo
+2. `npm install`
+3. Replace `example_config.json` with `config.json`
+4. Add your YouTube data api key to `config.json`
+5. Run `npm start`
 
 ### `npm start`
 
