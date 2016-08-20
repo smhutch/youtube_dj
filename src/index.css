@@ -1,0 +1,221 @@
+* {
+  font-family:"Avenir";
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #444;
+}
+
+header .logo {
+  width:100px;
+}
+
+.logo {
+  border-style: none;
+  display: block;
+  margin: 0px auto 20px;
+}
+
+header {
+  color:#ddd;
+  text-align: center;
+  background-color: #222;
+  box-shadow: inset 0px -5px 10px rgba(0,0,0,0.5);
+  padding:20px 0;
+}
+
+.slider {
+  padding:30px 0 20px;
+  box-shadow: inset 0px 5px 10px rgba(0,0,0,0.5);
+}
+
+.slider input {
+  width:100%;
+}
+
+.decks {
+  width:100%;
+}
+
+.deck {
+  display: inline-block;
+  width: 50%;
+}
+
+.deck iframe {
+  border: none;vertical-align: bottom;
+}
+
+.container {
+  width:90%;
+  margin: 0px auto;
+  max-width: 1024px;
+}
+
+.footer {
+  padding:100px 0;
+  text-align:center;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #aaa;
+  letter-spacing: 0.5em;
+}
+
+.footer a {
+  color: inherit;;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.explainer {
+  padding:100px 50px;
+  margin:20px 0;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 5px;
+  font-size: 1.6em;
+  position: relative;
+}
+
+.explainerArrow {
+  position:absolute;
+  left:20px;
+  top:20px;
+  font-size: 2em;
+  width:50px;
+  height:50px;
+}
+
+.explainerEmoji {
+  max-width: 400px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.explainerEmoji span {
+  width:33%;
+  display: inline-block;
+  font-size: 3em;
+}
+
+
+.explainerEmoji span:first-of-type {
+  transform: scale(-1, 1);
+}
+
+.explainerEmoji span:nth-of-type(2) {
+  font-size:5em;
+}
+
+.search input {
+  width:80%;
+  padding:20px;
+  font-family: "courier new";
+  border-bottom: 1px dashed #ccc;
+  background-color: #222;
+  border: none;
+  color: white;
+  box-shadow: inset 0px 2px 4px rgba(0,0,0,0.5);
+  outline: none!important;
+}
+
+.search button {
+  margin-left: 2%;
+  width: 18%;
+  padding: 20px;
+  background-color: #732d2d;
+  transition: 0.2s ease all;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+  cursor: pointer;
+  color: white;
+  text-shadow:0px 1px 2px rgba(0,0,0,0.5);
+  outline: none;
+  text-transform: uppercase;
+}
+
+.search button:hover {
+  background-color: #582525;
+  transform:scale(1.02);
+}
+
+.result {
+  width:49%;
+  margin-top:2%;
+  display:inline-block;
+  height:300px;
+  position: relative;
+  background-size: cover;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+  overflow:hidden;
+  text-align: center;
+  transition:0.2s ease all;
+  background-position: center;
+}
+
+.result:hover {
+  transform:scale(1.02) translateY(-2px);
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.5);
+}
+
+.result .resultOverlay {
+  position:absolute;
+  background: linear-gradient(to bottom, black, rgba(0,0,0,0.5), black);
+  bottom:0;
+  top:0;
+  left:0;
+  right:0;
+}
+
+.result:nth-of-type(odd) {
+  margin-right:1%;
+}
+
+.result:nth-of-type(even) {
+  margin-left:1%;
+}
+
+.result .buttons {
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  top:0;
+  opacity:0;
+  visibility: hidden;
+  background-color:rgba(0,0,0,0.5);
+  transition:0.2s ease all;
+}
+
+.result .buttons button {
+  position: absolute;
+  bottom:10px;
+  width:40%;
+}
+
+.result .buttons button.loadLeftButton {
+  left:10px;
+}
+
+.result .buttons button.loadRightButton {
+  right:10px;
+}
+
+.result:hover .buttons {
+  opacity:1;
+  visibility:visible;
+}
+
+.result p {
+  position:absolute;
+  bottom:0;
+  top:0;
+  left:0;
+  right:0;
+  color:white;
+  text-shadow:0px 1px 2px rgba(0,0,0,0.5)
+}
